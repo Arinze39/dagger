@@ -218,6 +218,41 @@ java_library(
 )
 
 java_library(
+    name = "android_support_annotations",
+    exports = ["@com_android_support_annotations//jar"]
+)
+
+android_library(
+    name = "android_support_fragment",
+    exports = ["@com_android_support_fragment//aar"]
+)
+
+android_library(
+    name = "android_support_compat",
+    exports = ["@com_android_support_compat//aar"]
+)
+
+android_library(
+    name = "android_support_core_ui",
+    exports = ["@com_android_support_core_ui//aar"]
+)
+
+android_library(
+    name = "android_support_core_utils",
+    exports = ["@com_android_support_core_utils//aar"]
+)
+
+java_library(
+    name = "android_arch_lifecycle",
+    exports = ["@android_arch_lifecycle//jar"]
+)
+
+android_library(
+    name = "android_appcompat",
+    exports = ["@com_android_support_appcompat//aar"]
+)
+
+java_library(
     name = "compile_testing",
     testonly = 1,
     exports = [

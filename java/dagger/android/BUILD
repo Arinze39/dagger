@@ -39,7 +39,7 @@ android_library(
         "//third_party:auto_value",
         "//third_party:error_prone_annotations",
         "//third_party:jsr305_annotations",
-        "@androidsdk//com.android.support:support-annotations-25.0.0",
+        "//third_party:android_support_annotations",
     ],
 )
 

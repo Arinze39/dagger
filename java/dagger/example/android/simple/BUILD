@@ -26,9 +26,9 @@ android_library(
         "//:android",
         "//:android-support",
         "//:dagger_with_compiler",
-        "@androidsdk//com.android.support:appcompat-v7-25.0.0",
-        "@androidsdk//com.android.support:support-annotations-25.0.0",
-        "@androidsdk//com.android.support:support-v4-25.0.0",
+        "//third_party:android_appcompat",
+        "//third_party:android_support_annotations",
+        "//third_party:android_support_fragment",
     ],
 )
 

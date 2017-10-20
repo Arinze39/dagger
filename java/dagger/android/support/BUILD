@@ -33,9 +33,13 @@ android_library(
         "//:dagger_with_compiler",
         "//java/dagger/android",
         "//third_party:jsr305_annotations",
-        "@androidsdk//com.android.support:appcompat-v7-25.0.0",
-        "@androidsdk//com.android.support:support-annotations-25.0.0",
-        "@androidsdk//com.android.support:support-v4-25.0.0",
+        "//third_party:android_appcompat",
+        "//third_party:android_support_annotations",
+        "//third_party:android_support_fragment",
+        "//third_party:android_support_compat",
+        "//third_party:android_support_core_ui",
+        "//third_party:android_support_core_utils",
+        "//third_party:android_arch_lifecycle",
     ],
 )
 

@@ -12,6 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+load("@bazel_tools//tools/build_defs/repo:maven_rules.bzl", "maven_jar", "maven_aar")
+
 android_sdk_repository(
     name = "androidsdk",
     api_level = 26,
@@ -195,6 +197,55 @@ maven_jar(
     name = "com_google_protobuf_protobuf_java",
     artifact = "com.google.protobuf:protobuf-java:3.2.0",
     sha1 = "62ccf171a106ff6791507f2d5364c275f9a3131d",
+)
+
+maven_jar(
+    name = "com_android_support_annotations",
+    artifact = "com.android.support:support-annotations:26.1.0",
+    settings = "//:maven.google.com.xml",
+    sha1 = "0814258103cf26a15fcc26ecce35f5b7d24b73f8",
+)
+
+maven_aar(
+    name = "com_android_support_fragment",
+    artifact = "com.android.support:support-fragment:26.1.0",
+    settings = "//:maven.google.com.xml",
+    sha1 = "ddacf369bb98dd6558606558de8ddcd53895cf91",
+)
+
+maven_aar(
+    name = "com_android_support_compat",
+    artifact = "com.android.support:support-compat:26.1.0",
+    settings = "//:maven.google.com.xml",
+    sha1 = "1e1c8ffc01d277d8f01dfd11d5d2ce3a2af4b98c",
+)
+
+maven_aar(
+    name = "com_android_support_core_ui",
+    artifact = "com.android.support:support-core-ui:26.1.0",
+    settings = "//:maven.google.com.xml",
+    sha1 = "e306308d54052a1ded7bf9c2f5c2fdf5152a1f22",
+)
+
+maven_aar(
+    name = "com_android_support_core_utils",
+    artifact = "com.android.support:support-core-utils:26.1.0",
+    settings = "//:maven.google.com.xml",
+    sha1 = "1bfaae21c4d5c5532c5e732071e9ce234cd58cff",
+)
+
+maven_jar(
+    name = "android_arch_lifecycle",
+    artifact = "android.arch.lifecycle:common:1.0.3",
+    settings = "//:maven.google.com.xml",
+    sha1 = "7d7f60c4783872861222166f6164215f8951c7b1",
+)
+
+maven_aar(
+    name = "com_android_support_appcompat",
+    artifact = "com.android.support:appcompat-v7:26.1.0",
+    settings = "//:maven.google.com.xml",
+    sha1 = "da5771a9ac6e8f3a461360eed3c6f921dc7580fd",
 )
 
 http_archive(
